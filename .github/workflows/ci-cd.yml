@@ -15,3 +15,9 @@ jobs:
 
       - name: Build Docker image
         run: docker build -t employee-app:latest .
+
+      - name: List Docker images
+        run: docker images
+
+      - name: List running containers
+        run: docker ps -a
